@@ -28,29 +28,29 @@ public class Dijkstras {
         //202
         g.addVertex('c', Arrays.asList(new Vertex('b', 938), new Vertex('d', 929)));
         //203
-        g.addVertex('d', Arrays.asList(new Vertex('c', 929), new Vertex('g', 600)));
+        g.addVertex('d', Arrays.asList(new Vertex('c', 929), new Vertex('g', 600), new Vertex('e', 929)));
         //204
-        g.addVertex('e', Arrays.asList(new Vertex('g', 304), new Vertex('f', 241)));
+        g.addVertex('e', Arrays.asList(new Vertex('g', 304), new Vertex('f', 241), new Vertex('k', 2064), new Vertex('d', 929)));
         //205
         g.addVertex('f', Arrays.asList(new Vertex('e', 241)));
         //206
         g.addVertex('g', Arrays.asList(new Vertex('k', 2064), new Vertex('h', 203), new Vertex('e', 304), new Vertex('d', 600)));
         //207
-        g.addVertex('h', Arrays.asList(new Vertex('g', 203)));
+        g.addVertex('h', Arrays.asList(new Vertex('g', 203), new Vertex('k', 2064)));
         //208
         g.addVertex('i', Arrays.asList(new Vertex('k', 536)));
         //209
         //g.addVertex('j', Arrays.asList(new Vertex('h', 1)));
         //210
-        g.addVertex('k', Arrays.asList(new Vertex('l', 761), new Vertex('i', 536), new Vertex('g', 2064)));
+        g.addVertex('k', Arrays.asList(new Vertex('l', 761), new Vertex('i', 536), new Vertex('g', 2064), new Vertex('h', 2064)));
         //211
-        g.addVertex('l', Arrays.asList(new Vertex('k', 761)));
+        g.addVertex('l', Arrays.asList(new Vertex('k', 761), new Vertex('m', 1078)));
         //212
-        //g.addVertex('m', Arrays.asList(new Vertex('h', 1)));
+        g.addVertex('m', Arrays.asList(new Vertex('n', 1078), new Vertex('l', 1078)));
         //213
-        //g.addVertex('n', Arrays.asList(new Vertex('h', 1)));
+        g.addVertex('n', Arrays.asList(new Vertex('o', 1078), new Vertex('m', 1078)));
         //214
-        g.addVertex('o', Arrays.asList(new Vertex('p', 1078)));
+        g.addVertex('o', Arrays.asList(new Vertex('p', 1078), new Vertex('n', 1078)));
         //215
         g.addVertex('p', Arrays.asList(new Vertex('q', 114), new Vertex('o', 1078)));
         //216
@@ -69,6 +69,7 @@ public class Dijkstras {
         g.addVertex('w', Arrays.asList(new Vertex('x', 185), new Vertex('v', 317)));
         //223
         g.addVertex('x', Arrays.asList(new Vertex('w', 185)));
+        // 223 to lift 2291
         //List<Integer> M = g.getShortestPath(A, B);
         //List<Integer> M = g.getShortestPath('d', 's');
         //System.out.println(g.getShortestPath( As, Bs));
