@@ -11,7 +11,8 @@ public class HelloController extends HelloApplication{
     Dijkstras yo = new Dijkstras();
     /*@FXML
     TextField TextOne;
-    @FXML TextField TextTwo;*/
+    @FXML TextFieom/example/shortestpath/Graph.class
+[OK] Successfully added the file to the exported jar: com/example/shortestpath/HelloApplicld TextTwo;*/
     @FXML
     private Label welcomeText;
 
